@@ -24,7 +24,7 @@ const scraperObject = {
         for(var i = 0; i < 14; i++){
           console.log("Looping times i", i)
           // randomize what order we iterate since it gets stuck sometimes for some reason
-          let rand = Math.floor(Math.random() * 15);
+          let rand = Math.floor(Math.random() * 13);
           console.log("Indexing into rand", rand)
           await selectAll[rand].click();
           await page.waitForTimeout(4000);
